@@ -35,4 +35,6 @@ sudo apt update
 sudo apt install openjdk-17-jdk -y
 sudo update-alternatives --config java
 
-
+#kill the process using 8080
+sudo lsof -i :8080
+sudo kill -9 (#proc_id)
