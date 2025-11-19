@@ -1,4 +1,4 @@
-Run the following command in the terminal:
+#Run the following command in the terminal:
 
 mvn archetype:generate \
 -DgroupId=com.example \
@@ -6,7 +6,7 @@ mvn archetype:generate \
 -DarchetypeArtifactId=maven-archetype-quickstart \
 -DinteractiveMode=false
 
-Navigate to your project:
+#Navigate to your project:
 cd helloworld
 
 rm pom.xml
@@ -16,14 +16,23 @@ cd src/main/java/com/example
 
 nano HelloworldApplication.java
 
-Return to the project root (where pom.xml resides):
+#Return to the project root (where pom.xml resides):
 cd ../../../../..
 
 mvn clean install
 
-Run the Spring Boot App
-Execute:
+#Run the Spring Boot App
+#Execute:
 mvn spring-boot:run
 
-check: http://localhost:8080/hello
+#check: 
+http://localhost:8080/hello
+
+
+#java17-install commands:
+sudo add-apt-repository ppa:openjdk-r/ppa -y
+sudo apt update
+sudo apt install openjdk-17-jdk -y
+sudo update-alternatives --config java
+
 
